@@ -1,0 +1,21 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Temporary files generated during runs
+tem_*.tsv
+tem_e*.tsv
+tem_matrix_*.tsv
+tem_meta_*.tsv
+inmatrix_*.csv
+*.log
+associate.pdf
+auc_run.txt
+
+# OS
+.DS_Store
+Thumbs.db
