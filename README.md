@@ -119,11 +119,7 @@ This file contains the identified biomarkers' contribution scores. By default,Ad
 
 ## Acknowledgements
 
-AdAptMicroG is developed based on [GDmicro](https://github.com/HeruiLiao/GDmicro), a graph deep learning tool for host disease status classification using human gut microbiome data. The core modification of AdAptMicroG replaces the graph convolutional network (GCN) backbone of GDmicro with a graph attention network (GAT). The domain-adaptation-based embedding (MK-MMD) and the biomarker contribution scoring components are inherited and further extended from GDmicro. We thank the authors of GDmicro for making their source code publicly available under the MIT license.
-
-If you use AdAptMicroG, please also cite the GDmicro paper:
-
-Liao H, Shang J, Sun Y. GDmicro: classifying host disease status with GCN and deep adaptation network based on the human gut microbiome data. Bioinformatics. 2023;39(12):btad747. https://doi.org/10.1093/bioinformatics/btad747
+AdAptMicroG is developed based on [GDmicro](https://github.com/HeruiLiao/GDmicro), a graph deep learning tool for host disease status classification using human gut microbiome data. We thank the authors of GDmicro for making their source code publicly available under the MIT license.
 
 ## License
 
