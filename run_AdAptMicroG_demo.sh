@@ -1,7 +1,5 @@
 python AdAptMicroG.py -i Input_files/CRC_10fold.csv -t 1  -d CRC -o AdAptMicroG_new_pipe/CRC_10fold
 
-python AdAptMicroG.py -i Input_files/Obt_10fold.csv -t 1  -d Obt -o AdAptMicroG_new_pipe/Obt_10fold
-
 python AdAptMicroG.py -i Input_files/T2D_10fold.csv -t 1  -d T2D -o AdAptMicroG_new_pipe/T2D_10fold
 
 python AdAptMicroG.py -i Input_files/ASD_10fold.csv -t 1  -d ASD -o AdAptMicroG_new_pipe/ASD_10fold

@@ -46,6 +46,8 @@ For missing values in the "disease" or "study" column, you can replace them with
 
 **Dataset notes:** The ten-fold and LOSO experiments use mOTU2-based abundance profiles (`*_10fold.csv`, `*_LOSO.csv`), while the external-validation training set (`CRC_IND_additional.csv`) uses independently reprocessed MetaPhlAn2 species-level profiles. Because the two preprocessing pipelines apply different filtering criteria, the same Wirbel cohort contains 125 samples (65 healthy / 60 CRC) in `CRC_IND_additional.csv` but 120 samples (60/60) in `CRC_GER_LOSO.csv`; both versions originate from the same raw sequencing data. Disease labels in the `disease` column follow the naming convention used in the paper (e.g., `ASD`, `Cirrhosis`, `CRC`, `MHE`, `T2D`, `IBD`); the `-d` argument of `AdAptMicroG.py` must match the disease value exactly.
 
+`Obt_10fold.csv` (Denmark, 265 samples) is an additional cohort retained for exploratory use; it is **not** reported in the paper and is not invoked by `run_AdAptMicroG_demo.sh`. Users can still run it manually with `-d Obt` if needed.
+
 
 ### Use AdAptMicroG to classify disease status for input samples.<BR/>
    1.1. Apply AdAptMicroG to classify the disease status of your test samples.<BR/>
