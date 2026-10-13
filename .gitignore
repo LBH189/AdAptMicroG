@@ -6,6 +6,9 @@ __pycache__/
 build/
 dist/
 
+# Experiment outputs (kept locally, not tracked)
+AdAptMicroG_new_pipe/
+
 # Temporary files generated during runs
 tem_*.tsv
 tem_e*.tsv

@@ -1,4 +1,0 @@
-The train acc is 0.9903
-The train AUC is 0.9984
-The test acc is 0.8333
-The test AUC is 0.9193
