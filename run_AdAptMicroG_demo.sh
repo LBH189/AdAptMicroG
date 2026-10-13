@@ -4,7 +4,11 @@ python AdAptMicroG.py -i Input_files/Obt_10fold.csv -t 1  -d Obt -o AdAptMicroG_
 
 python AdAptMicroG.py -i Input_files/T2D_10fold.csv -t 1  -d T2D -o AdAptMicroG_new_pipe/T2D_10fold
 
-python AdAptMicroG.py -i Input_files/cirrhosis_10fold.csv -t 1  -d cirrhosis -o AdAptMicroG_new_pipe/cirrhosis_10fold
+python AdAptMicroG.py -i Input_files/ASD_10fold.csv -t 1  -d ASD -o AdAptMicroG_new_pipe/ASD_10fold
+
+python AdAptMicroG.py -i Input_files/MHE_10fold.csv -t 1  -d MHE -o AdAptMicroG_new_pipe/MHE_10fold
+
+python AdAptMicroG.py -i Input_files/cirrhosis_10fold.csv -t 1  -d Cirrhosis -o AdAptMicroG_new_pipe/cirrhosis_10fold
 
 
 python AdAptMicroG.py -i Input_files/CRC_FRA_LOSO.csv -s 10  -d CRC -o AdAptMicroG_new_pipe/CRC_FRA_LOSO
