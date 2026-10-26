@@ -1,0 +1,107 @@
+##
+## Configuration for AdAptMicroG preprocessing and the auxiliary
+## SIAMCAT feature-selection scripts. Run the project from its root
+## directory so the R scripts can load this file.
+##
+
+setup:
+    tag: 'g2_l75'
+    ab.cutoff: 1e-03
+
+# alpha
+associations:
+    alpha.meta: 1e-05
+    alpha.single.study: 0.005
+    mult.corr: 'fdr'
+    pr.cutoff: 0.05
+    log.n0: 1e-05
+    log.n0.func: 1e-08
+
+# Study lists retained from the project's original configuration.
+# The current AdAptMicroG pipeline does not use these lists to select
+# or split samples; study/site labels come from the input CSV's `study`
+# column, and the input file's `class` column determines the split.
+ref.studies:
+    - FR-CRC
+    - AT-CRC
+    - CN-CRC
+    - US-CRC
+    - DE-CRC
+ext.crc.studies:
+    - IT-CRC
+    - IT-CRC-2
+    - JP-CRC
+ext.studies:
+    - CN-T2D
+    - SE-T2D
+    - DE-PD
+    - US-HMP
+    - DN-metaHIT
+
+model.building:
+
+    ab.cutoff: 1e-03
+
+    norm.method: 'log.std'
+    sd.min.q: 0.1
+    log.n0: 1e-05
+    log.n0.func: 1e-08
+    n.p: 2
+    norm.margin: 1
+
+    num.folds: 10
+    num.resample: 10
+
+    stratify: TRUE
+
+    ml.method: 'lasso'
+
+
+    modsel.crit: 'pr'
+    min.nonzero.coeff: 1
+
+
+    feature.selection:
+        type: "AUC"
+        cutoff: 800
+
+
+# Plotting
+plotting:
+    study.cols:
+        FR-CRC: '#2FBFBF'
+        AT-CRC: '#177254'
+        CN-CRC: '#F2CC30'
+        US-CRC: '#74B347'
+        DE-CRC: '#8265CC'
+    stage.cols:
+        early: '#D8AE84'
+        late: '#AE6C3D'
+    loc.cols:
+        LC: "#6BAED6"
+        RC: "#DEEBF7"
+        Rectum: "#08306B"
+    sex.cols:
+        F: '#FEB24C'
+        M: '#FFFFB2'
+    bmi.cols:
+        lean: '#53D680'
+        overweight/obese: '#086B27'
+    age.cols:
+        A: "#FF5959"
+        D: "#AD0000"
+    peformance.cols:
+        - 'black'
+        - 'darkgreen'
+        - 'forestgreen'
+        - 'chartreuse3'
+        - 'lawngreen'
+        - 'yellow'
+    gmm.cols:
+        amino acid degradation: "#F2AD00"
+        organic acid metabolism: "#F98400"
+        glycoprotein degradation: "brown"
+        carbohydrate degradation: "#00A08A"
+    group.cols:
+        CTR: "#C2C2C2"
+        CRC: '#d9544d'
